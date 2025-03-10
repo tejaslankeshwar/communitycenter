@@ -61,12 +61,12 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden">
-              <Image
+              {/* <Image
                 src="/images/about/story.jpg"
                 alt="Our journey"
                 fill
                 className="object-cover"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 key={partner.name}
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="relative h-20">
+                <div className="relative h-40 w-50">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
@@ -195,43 +195,43 @@ const team = [
     name: 'Dr. Sarah Mitchell',
     role: 'Founder & Executive Director',
     description: 'Interfaith dialogue expert with 15+ years of experience',
-    image: '/images/team/sarah.jpg',
+    image: 'https://communionhub.org/static/media/Sarah.3325eaa150fb44841e37.jpg',
   },
   {
-    name: 'Raj Kumar',
+    name: 'Alex Joe',
     role: 'Community Relations',
     description: 'Building bridges between diverse faith communities',
-    image: '/images/team/raj.jpg',
+    image: 'https://communionhub.org/static/media/Kamal.6f7eeec2f3b792bd2b32.avif',
   },
   {
     name: 'David Cohen',
     role: 'Programs Director',
     description: 'Developing impactful interfaith initiatives',
-    image: '/images/team/david.jpg',
+    image: 'https://communionhub.org/static/media/Steven.17ae0664fa7ce7916358.avif',
   },
   {
     name: 'Aisha Rahman',
     role: 'Education Coordinator',
     description: 'Creating inclusive learning experiences',
-    image: '/images/team/aisha.jpg',
+    image: 'https://communionhub.org/static/media/Priya.c909cb09acc5df41a5b0.avif',
   },
 ]
 
 const partners = [
   {
     name: 'Global Interfaith Network',
-    logo: '/images/partners/partner1.png',
+    logo: 'https://communionhub.org/static/media/header-img-1.adf1de5fdab6ef84caff.avif',
   },
   {
     name: 'Unity Foundation',
-    logo: '/images/partners/partner2.png',
+    logo: 'https://communionhub.org/static/media/hero-1.e9ab6d260ce2077bcebe.avif',
   },
   {
     name: 'Peace Initiative',
-    logo: '/images/partners/partner3.png',
+    logo: 'https://communionhub.org/static/media/hero-3.22dd2495b007dee69115.avif',
   },
   {
     name: 'Community Bridge Builders',
-    logo: '/images/partners/partner4.png',
+    logo: 'https://communionhub.org/static/media/hero-6.7d2a560b61405b8f97d2.avif',
   },
 ] 
