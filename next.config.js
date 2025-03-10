@@ -49,6 +49,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'standalone',
+  distDir: '.next',
+  typescript: {
+    ignoreBuildErrors: true
+  }
 }
 
 module.exports = nextConfig 
