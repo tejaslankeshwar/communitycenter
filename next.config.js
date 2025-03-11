@@ -31,8 +31,8 @@ const nextConfig = {
     ],
     minimumCacheTTL: 60,
     formats: ['image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256]
   },
   env: {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
@@ -41,18 +41,23 @@ const nextConfig = {
     NEXT_PUBLIC_CLOUDINARY_API_SECRET: process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET || '',
   },
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production' ? {
-      exclude: ['error']
-    } : false,
-  },
-  experimental: {
-    optimizeCss: false
+    removeConsole: process.env.NODE_ENV === 'production',
   },
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    optimizeCss: true,
+    turbotrace: {
+      logLevel: 'error',
+      memoryLimit: 6000,
+    },
+    isrMemoryCacheSize: 0,
+    workerThreads: false,
+    cpus: 1
+  }
 }
 
 module.exports = nextConfig 
