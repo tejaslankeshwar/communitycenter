@@ -11,15 +11,9 @@ export function Footer() {
           <div className="space-y-6"> 
             <Link href="/" className="inline-block">
               <img 
-                src="/logo.svg"
+                src="https://communitycenter.vercel.app/logo.svg"
                 alt="Communion" 
                 className="h-12 w-auto"
-                style={{ 
-                  filter: 'brightness(0) invert(1)',
-                  opacity: 1,
-                  display: 'block',
-                  marginBottom: '1rem'
-                }}
               />
             </Link>
             <p className="text-white/70">
