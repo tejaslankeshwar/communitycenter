@@ -46,7 +46,9 @@ const nextConfig = {
     } : false,
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
+    typedRoutes: false,
+    serverActions: false,
   },
   poweredByHeader: false,
   compress: true,
@@ -55,6 +57,10 @@ const nextConfig = {
   distDir: '.next',
   typescript: {
     ignoreBuildErrors: true
+  },
+  webpack: (config, { isServer }) => {
+    // Add any necessary webpack configurations
+    return config
   }
 }
 
