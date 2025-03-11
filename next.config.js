@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'images.unsplash.com', 'plus.unsplash.com'],
+    domains: [
+      'res.cloudinary.com', 
+      'images.unsplash.com', 
+      'plus.unsplash.com',
+      'communionhub.org'
+    ],
   },
   env: {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
