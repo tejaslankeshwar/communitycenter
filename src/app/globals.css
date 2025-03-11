@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
   --primary-50: #f0f6ff;
   --primary-100: #e0eeff;
   --primary-200: #baddff;
@@ -26,6 +29,19 @@
   --accent-800: #963815;
   --accent-900: #7b2f14;
   --accent-950: #451507;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer base {
