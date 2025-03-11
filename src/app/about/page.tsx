@@ -92,6 +92,7 @@ export default function AboutPage() {
                     alt={member.name}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 192px"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-primary-900">
@@ -122,12 +123,13 @@ export default function AboutPage() {
                 key={partner.name}
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="relative h-40 w-50">
+                <div className="relative h-24">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
                     fill
                     className="object-contain"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
               </div>
@@ -198,40 +200,40 @@ const team = [
     image: 'https://communionhub.org/static/media/Sarah.3325eaa150fb44841e37.jpg',
   },
   {
-    name: 'Alex Joe',
+    name: 'Priya Sharma',
     role: 'Community Relations',
     description: 'Building bridges between diverse faith communities',
-    image: 'https://communionhub.org/static/media/Kamal.6f7eeec2f3b792bd2b32.avif',
+    image: 'https://communionhub.org/static/media/Priya.c909cb09acc5df41a5b0.avif',
   },
   {
-    name: 'David Cohen',
+    name: 'Steven Chen',
     role: 'Programs Director',
     description: 'Developing impactful interfaith initiatives',
     image: 'https://communionhub.org/static/media/Steven.17ae0664fa7ce7916358.avif',
   },
   {
-    name: 'Aisha Rahman',
+    name: 'Kamal Hassan',
     role: 'Education Coordinator',
     description: 'Creating inclusive learning experiences',
-    image: 'https://communionhub.org/static/media/Priya.c909cb09acc5df41a5b0.avif',
+    image: 'https://communionhub.org/static/media/Kamal.6f7eeec2f3b792bd2b32.avif',
   },
 ]
 
 const partners = [
   {
     name: 'Global Interfaith Network',
-    logo: 'https://communionhub.org/static/media/header-img-1.adf1de5fdab6ef84caff.avif',
+    logo: 'https://images.unsplash.com/photo-1553073520-80b5ad5ec870?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
   },
   {
     name: 'Unity Foundation',
-    logo: 'https://communionhub.org/static/media/hero-1.e9ab6d260ce2077bcebe.avif',
+    logo: 'https://plus.unsplash.com/premium_photo-1723601206748-ed9bcfc5ab09?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
   },
   {
     name: 'Peace Initiative',
-    logo: 'https://communionhub.org/static/media/hero-3.22dd2495b007dee69115.avif',
+    logo: 'https://images.unsplash.com/photo-1591197172062-c718f82aba20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
   },
   {
     name: 'Community Bridge Builders',
-    logo: 'https://communionhub.org/static/media/hero-6.7d2a560b61405b8f97d2.avif',
+    logo: 'https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
   },
 ] 
