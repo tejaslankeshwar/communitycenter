@@ -1,6 +1,6 @@
-# Communion - Interfaith Community Platform
+# Communion - Connect Communities Across Faiths
 
-A modern web application built with Next.js that connects faith communities and facilitates interfaith dialogue through events and programs.
+A modern web platform built with Next.js that connects communities across different faiths through events and programs.
 
 ## Features
 
@@ -33,7 +33,7 @@ A modern web application built with Next.js that connects faith communities and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/communion.git
+git clone https://github.com/your-username/communion.git
 cd communion
 ```
 
@@ -44,7 +44,7 @@ npm install
 yarn install
 ```
 
-3. Create a `.env` file in the root directory and add your environment variables:
+3. Create a `.env.local` file in the root directory and add your environment variables:
 ```env
 NEXT_PUBLIC_SITE_URL=your_site_url
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
@@ -81,17 +81,13 @@ communion/
 The project is configured for deployment on Vercel:
 
 1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Configure environment variables in Vercel dashboard
+2. Import your repository in Vercel
+3. Configure environment variables
 4. Deploy!
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
@@ -100,4 +96,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Your Name - your.email@example.com
-Project Link: [https://github.com/yourusername/communion](https://github.com/yourusername/communion) 
+Project Link: [https://github.com/your-username/communion](https://github.com/your-username/communion) 
