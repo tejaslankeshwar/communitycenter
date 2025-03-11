@@ -33,7 +33,7 @@ export function FeaturedPrograms() {
             <span className="inline-flex items-center px-4 py-1.5 mb-4 text-xs font-medium bg-primary-50 text-primary-600 rounded-full">
               OUR PROGRAMS
             </span>
-            <h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">
               Transformative Experiences
             </h2>
             <p className="text-content-center text-lg text-neutral-600">
