@@ -46,22 +46,13 @@ const nextConfig = {
     } : false,
   },
   experimental: {
-    optimizeCss: false,
-    typedRoutes: false,
-    serverActions: false,
+    optimizeCss: false
   },
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
-  typescript: {
-    ignoreBuildErrors: true
-  },
-  webpack: (config, { isServer }) => {
-    // Add any necessary webpack configurations
-    return config
-  }
+  output: 'standalone'
 }
 
 module.exports = nextConfig 
