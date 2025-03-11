@@ -41,13 +41,24 @@ const nextConfig = {
     NEXT_PUBLIC_CLOUDINARY_API_SECRET: process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET || '',
   },
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: false
   },
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    optimizePackageImports: ['@heroicons/react', 'date-fns', 'react-icons'],
+    webpackBuildWorker: false
+  },
+  webpack: (config, { isServer }) => {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    }
+    return config
+  }
 }
 
 module.exports = nextConfig 
