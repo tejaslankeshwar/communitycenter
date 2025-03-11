@@ -10,7 +10,14 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <Image src="http://localhost:3000/logo.svg" alt="Communion" width={60} height={60} />
+              <Image 
+                src="/logo.svg"
+                alt="Communion" 
+                width={150}
+                height={40}
+                className="w-auto h-12 brightness-0 invert"
+                priority
+              />
             </Link>
             <p className="text-white/70">
               Bringing communities together through meaningful connections and shared understanding.
