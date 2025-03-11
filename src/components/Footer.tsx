@@ -13,7 +13,8 @@ export function Footer() {
               <img 
                 src="https://communitycenter.vercel.app/logo.svg"
                 alt="Communion" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto filter invert"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <p className="text-white/70">
