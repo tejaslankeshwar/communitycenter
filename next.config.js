@@ -47,17 +47,7 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
-  experimental: {
-    optimizeCss: true,
-    turbotrace: {
-      logLevel: 'error',
-      memoryLimit: 6000,
-    },
-    isrMemoryCacheSize: 0,
-    workerThreads: false,
-    cpus: 1
-  }
+  output: 'standalone'
 }
 
 module.exports = nextConfig 
