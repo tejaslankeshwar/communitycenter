@@ -10,13 +10,10 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <Image 
-                src="/logo.svg"
+              <img 
+                src="https://communitycenter.vercel.app/logo.svg"
                 alt="Communion" 
-                width={150}
-                height={40}
-                className="w-auto h-12 brightness-0 invert"
-                priority
+                className="h-12 w-auto brightness-0 invert"
               />
             </Link>
             <p className="text-white/70">
