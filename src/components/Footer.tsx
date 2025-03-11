@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand Section */}
-          <div className="space-y-6">
+          <div className="space-y-6"> 
             <Link href="/" className="inline-block">
               <img 
                 src="https://communitycenter.vercel.app/logo.svg"

@@ -7,67 +7,66 @@ const programs = [
   {
     title: 'Interfaith Leadership Program',
     description: 'A comprehensive program designed to develop the next generation of interfaith leaders through workshops, mentorship, and hands-on experience.',
-    image: 'https://communionhub.org/static/media/moments-1.ab7ff79bf394a244a0c7.jpg',
+    image: '/images/programs/leadership.jpg',
     link: '/programs/leadership',
   },
   {
     title: 'Sacred Spaces Tour',
     description: 'Experience guided visits to various places of worship, fostering understanding and appreciation of different faith traditions.',
-    image: 'https://communionhub.org/static/media/moments-2.1ffdbef7fa235e0af2be.avif',
+    image: '/images/programs/sacred-spaces.jpg',
     link: '/programs/sacred-spaces',
   },
   {
     title: 'Community Service Initiative',
     description: 'Join faith communities working together on service projects that address local needs and build lasting relationships.',
-    image: 'https://communionhub.org/static/media/moments-3.71fa7813105dddf86c48.avif',
+    image: '/images/programs/community-service.jpg',
     link: '/programs/community-service',
   },
 ]
 
 export function FeaturedPrograms() {
   return (
-    <section className="section-padding bg-neutral-50">
-      <div className="container">
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-4">
         <ScrollReveal>
-          <div className="content-narrow text-center mb-16">
-            <span className="inline-flex items-center px-4 py-1.5 mb-4 text-xs font-medium bg-primary-50 text-primary-600 rounded-full">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary-50 text-primary-600 rounded-full">
               OUR PROGRAMS
             </span>
-            <h2>
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
               Transformative Experiences
             </h2>
-            <p className="text-content-center text-lg text-neutral-600">
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
               Discover our signature programs designed to foster understanding, build relationships, and create lasting impact.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid-auto-fit">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {programs.map((program) => (
-            <ScrollReveal key={program.title} width="100%">
-              <div className="card card-hover h-full flex flex-col">
-                <div className="relative h-64 -mx-6 -mt-6 mb-6 overflow-hidden rounded-t-xl">
+            <ScrollReveal key={program.title}>
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="relative h-48 rounded-t-xl overflow-hidden">
                   <Image
                     src={program.image}
                     alt={program.title}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="flex flex-col flex-grow">
-                  <h3>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">
                     {program.title}
                   </h3>
-                  <p className="text-content text-neutral-600 flex-grow">
+                  <p className="text-neutral-600 mb-4">
                     {program.description}
                   </p>
                   <Link
                     href={program.link}
-                    className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mt-4 group"
+                    className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
                   >
                     Learn More
-                    <ArrowRightIcon className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                    <ArrowRightIcon className="w-4 h-4 ml-2" />
                   </Link>
                 </div>
               </div>
